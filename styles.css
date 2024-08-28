@@ -276,8 +276,9 @@ nav ul li a:hover {
     header .hero p {
         font-size: 1em;
     }
-
-    
+    section {
+        padding: 40px 20px;
+    }
     .menu-toggle {
         display: block; 
         bottom: 0;
