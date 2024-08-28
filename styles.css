@@ -1,9 +1,13 @@
+* {
+    box-sizing: border-box; 
+}
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: #f4f4f4;
+    overflow-x: hidden;
 }
 
 header {
@@ -283,7 +287,7 @@ nav ul li a:hover {
 
     .nav-menu {
         position: absolute;
-        top: 295px;
+        top: 315px;
         display: flex;
         flex-direction: column; 
         width: 50%;
@@ -343,13 +347,13 @@ nav ul li a:hover {
 .title{
     opacity: 0; 
     transform: translateX(-300px);
-    transition: opacity 1s ease-out, transform 2s ease-out;
+    transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 .text{
     opacity: 0; 
     transform: translateX(-300px);
-    transition: opacity 1s ease-out, transform 1.5s ease-out;
+    transition: opacity 1s ease-out, transform 2s ease-out;
 }
 
 .title.show{
