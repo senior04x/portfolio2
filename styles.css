@@ -198,9 +198,11 @@ form input, form textarea {
 .form-button:hover {
     background: #545353;
 }
-
+input::placeholder, textarea::placeholder{
+    opacity: 0;
+}
 .social-links a {
-    margin: 0 10px;
+    margin: 0 5px;
     color: #61dafb;
     text-decoration: none;
 }
@@ -256,7 +258,14 @@ nav ul li a:hover {
     display: flex;
 }
 
-
+.cotact-link img{
+    width: 30px;
+    height: 30px;
+    &:hover{
+        transform: scale(1.07);
+        transition: 0.3s;
+    }
+}
 @media (max-width: 768px) {
     .menu-toggle {
         display: block; 
@@ -283,5 +292,31 @@ nav ul li a:hover {
 
     .nav-menu li a {
         padding: 10px;
+    }
+    .project-overlay h3 {
+        font-size: 1.0em;
+    }
+    .project-overlay p {
+        margin: 5px 0;
+        font-size: 0.7em;
+    }
+    .project-link{
+        font-size: 0.7em;
+    }
+    .about-content{
+        display: block;
+    }
+    form {
+        gap: 0;
+    }
+    form label{
+        display: none;
+    }
+    input::placeholder, textarea::placeholder{
+        opacity: 1;
+    }
+    .cotact-link img{
+        width: 20px;
+        height: 20px;
     }
 }
