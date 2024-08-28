@@ -18,7 +18,9 @@ document.addEventListener('DOMContentLoaded', function() {
     menuToggle.addEventListener('click', function() {
         navMenu.classList.toggle('active');
     });
+
 });
+
 
 
 const aboutContent = document.querySelector('.title');
