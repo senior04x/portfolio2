@@ -26,7 +26,7 @@ const projectContent = document.querySelector('#projects');
 
 function handleScroll() {
     const contentPosition = aboutContent.getBoundingClientRect().top;
-    const screenPosition = window.innerHeight / 5;
+    const screenPosition = window.innerHeight / 10;
 
     if (contentPosition > screenPosition) {
         aboutContent.classList.add('show');
