@@ -18,18 +18,28 @@ document.addEventListener('DOMContentLoaded', function() {
     menuToggle.addEventListener('click', function(event) {
         event.stopPropagation(); 
         navMenu.classList.toggle('active');
-    });
-
-    document.addEventListener('click', function() {
+        
         if (navMenu.classList.contains('active')) {
-            navMenu.classList.remove('active');
+            menuToggle.innerHTML = '&#10005;'; // X icon
+        } else {
+            menuToggle.innerHTML = '&#9776;'; // Hamburger icon
         }
     });
 
+    // Close the menu when clicking outside of it
+    document.addEventListener('click', function() {
+        if (navMenu.classList.contains('active')) {
+            navMenu.classList.remove('active');
+            menuToggle.innerHTML = '&#9776;'; // Hamburger icon
+        }
+    });
+
+    // Prevent the menu from closing when clicking inside of it
     navMenu.addEventListener('click', function(event) {
         event.stopPropagation();
     });
 });
+
 
 
 

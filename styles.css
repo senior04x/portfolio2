@@ -248,15 +248,18 @@ nav ul li a:hover {
 
 .menu-toggle {
     display: none; 
-    background: #333;
+    background: transparent;
     color: #fff;
     border: none;
     padding: 8px 15px;
     font-size: 1.5em;
     cursor: pointer;
     border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
 }
-
+.menu-toggle:active{
+    transform: rotate(100deg);
+}
 .nav-menu {
     display: flex;
 }
@@ -269,6 +272,7 @@ nav ul li a:hover {
         transition: 0.3s;
     }
 }
+
 @media (max-width: 768px) {
     header .hero h1 {
         font-size: 2em;
