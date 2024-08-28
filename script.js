@@ -15,11 +15,22 @@ document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.querySelector('.menu-toggle');
     const navMenu = document.querySelector('.nav-menu');
 
-    menuToggle.addEventListener('click', function() {
+    menuToggle.addEventListener('click', function(event) {
+        event.stopPropagation(); 
         navMenu.classList.toggle('active');
     });
 
+    document.addEventListener('click', function() {
+        if (navMenu.classList.contains('active')) {
+            navMenu.classList.remove('active');
+        }
+    });
+
+    navMenu.addEventListener('click', function(event) {
+        event.stopPropagation();
+    });
 });
+
 
 
 

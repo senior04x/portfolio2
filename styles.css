@@ -78,9 +78,9 @@ section {
     margin: 0 auto;
 }
 
+
 .about-content {
     display: flex;
-    align-items: center;
     gap: 20px;
 }
 
@@ -276,26 +276,25 @@ nav ul li a:hover {
     
     .menu-toggle {
         display: block; 
-        right: 0;
         bottom: 0;
         position: absolute;
-       border-radius: 0;
+        border-radius: 0 5px 0 0;
     }
 
     .nav-menu {
         position: absolute;
         top: 295px;
         display: flex;
-        flex-direction: column-reverse; 
+        flex-direction: column; 
         width: 50%;
-        transform: translateX(200%);
-        opacity: 0;
+        transform: translateX(-200%);
+        opacity: 1;
         transition: transform 0.5s ease, opacity 2s ease;
     }
 
     .nav-menu.active {
         display: flex; 
-        transform: translateX(100%);
+        transform: translateX(0);
         opacity: 1;
     }
 
@@ -319,6 +318,11 @@ nav ul li a:hover {
     }
     .about-content{
         display: block;
+        text-align: end;
+    }
+    h2{
+        text-align: end;
+        margin-right: 20px;
     }
     form {
         gap: 0;
@@ -339,12 +343,12 @@ nav ul li a:hover {
 .title{
     opacity: 0; 
     transform: translateX(-300px);
-    transition: opacity 1s ease-out, transform 1.5s ease-out;
+    transition: opacity 1s ease-out, transform 2s ease-out;
 }
 
 .text{
     opacity: 0; 
-    transform: translateX(300px);
+    transform: translateX(-300px);
     transition: opacity 1s ease-out, transform 1.5s ease-out;
 }
 
