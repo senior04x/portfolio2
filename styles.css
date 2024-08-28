@@ -288,7 +288,7 @@ nav ul li a:hover {
 
     .nav-menu {
         position: absolute;
-        top: 315px;
+        top: 350px;
         display: flex;
         flex-direction: column; 
         width: 50%;
