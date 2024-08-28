@@ -260,6 +260,10 @@ nav ul li a:hover {
 @media (max-width: 768px) {
     .menu-toggle {
         display: block; 
+        right: 10px;
+        bottom: 10px;
+        position: absolute;
+        
     }
 
     .nav-menu {
