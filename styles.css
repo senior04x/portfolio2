@@ -328,21 +328,7 @@ nav ul li a:hover {
 }
 
 
-#about,#projects {
-    
-    display: flex;
-    align-items: start;
-    justify-content: start;
-    gap: 20px;
-    opacity: 0; 
-    transform: translateX(-300px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-}
 
-#about.show,#projects.show {
-    opacity: 1;
-    transform: translateX(0);
-}
 
 
 
