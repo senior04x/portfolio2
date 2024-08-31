@@ -334,7 +334,7 @@ nav ul li a:hover {
         margin-right: 20px;
     }
     form {
-        gap: 0;
+        gap: 15;
     }
     form label{
         display: none;
