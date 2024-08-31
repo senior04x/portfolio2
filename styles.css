@@ -358,6 +358,14 @@ nav ul li a:hover {
   textarea::placeholder {
     opacity: 1;
   }
+  form input:focus,
+form textarea:focus {
+  outline: none;
+  box-shadow: 0 12px 18px rgba(0, 0, 0, 0.2), 0 6px 12px rgba(0, 0, 0, 0.15);
+  /* transform: translateY(-3px); */
+  transform: scale(1.07);
+  
+}
   .cotact-link img {
     width: 20px;
     height: 20px;
