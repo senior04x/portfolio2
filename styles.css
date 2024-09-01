@@ -220,11 +220,6 @@ input::placeholder,
 textarea::placeholder {
   opacity: 0;
 }
-.social-links a {
-  margin: 0 5px;
-  color: #61dafb;
-  text-decoration: none;
-}
 
 footer {
   background: #282c34;
@@ -234,6 +229,15 @@ footer {
   position: relative;
   bottom: 0;
   width: 100%;
+}
+footer p{
+  color: #fff;
+  text-decoration: none;
+  margin: 10px;
+}
+footer a{
+  color: #fff;
+  text-decoration: none;
 }
 
 nav ul {
@@ -278,8 +282,13 @@ nav ul li a:hover {
 .nav-menu {
   display: flex;
 }
-
-.cotact-link img {
+.contact-link{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+.contact-link-img{
   width: 30px;
   height: 30px;
   &:hover {
@@ -366,7 +375,10 @@ form textarea:focus {
   transform: scale(1.07);
   
 }
-  .cotact-link img {
+.contact-link{
+  gap: 10px;
+}
+  .contact-link-img {
     width: 20px;
     height: 20px;
   }
