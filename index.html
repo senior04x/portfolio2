@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Omonqulov Xurshid</title>
-    <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="./img/portfolio.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <div class="hero">
+            <button type="button" class="btn btn-primary2" data-bs-toggle="modal" data-bs-target="#staticBackdrop"  data-en="Login" data-uz="Kirish" data-ru="Войти">Login</button>
             <div class="hero-content">
                 <h1 class="title" data-en="Omonqulov Xurshid" data-uz="Omonqulov Xurshid" data-ru="Омонкулов Хуршид">Omonqulov Xurshid</h1>
                 <p class="text" data-en="Front-End Developer | Crafting Beautiful and Functional Digital Experiences" data-uz="Front-End Developer | Chiroyli va funksional raqamli tajribalar yarataman" data-ru="Front-End Разработчик | Создание красивых и функциональных цифровых решений">Front-End Developer | Crafting Beautiful and Functional Digital Experiences</p>
@@ -27,11 +29,12 @@
         <nav>
             <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
             <ul class="nav-menu">
-                <li><a href="./index.html" data-en="Home" data-uz="Bosh sahifa" data-ru="Главная">Home</a></li>
-                <li><a href="#about" data-en="About" data-uz="Haqimda" data-ru="Обо мне">About</a></li>
-                <li><a href="#projects" data-en="Projects" data-uz="Loyihalar" data-ru="Проекты">Projects</a></li>
-                <li><a href="#skills" data-en="Skills" data-uz="Ko'nikmalar" data-ru="Навыки">Skills</a></li>
-                <li><a href="#contact" data-en="Contact" data-uz="Aloqa" data-ru="Контакт">Contact</a></li>
+                <li><a class="nav-menu-link" href="./index.html" data-en="Home" data-uz="Bosh sahifa" data-ru="Главная">Home</a></li>
+                <li><a class="nav-menu-link" href="#about" data-en="About" data-uz="Haqimda" data-ru="Обо мне">About</a></li>
+                <li><a class="nav-menu-link" href="#projects" data-en="Projects" data-uz="Loyihalar" data-ru="Проекты">Projects</a></li>
+                <li><a class="nav-menu-link" href="#skills" data-en="Skills" data-uz="Ko'nikmalar" data-ru="Навыки">Skills</a></li>
+                <li><a class="nav-menu-link" href="#contact" data-en="Contact" data-uz="Aloqa" data-ru="Контакт">Contact</a></li>
+              
             </ul>
           
         </nav>
@@ -129,7 +132,7 @@
                 <input placeholder="Email" type="email" id="email" name="email" required />
                 <label for="message" data-en="Message:" data-uz="Xabar:" data-ru="Сообщение:">Message:</label>
                 <textarea placeholder="Your message" id="message" name="message" rows="4" required></textarea>
-                <button class="form-button" type="submit" data-en="Send Message" data-uz="Xabar yuborish" data-ru="Отправить сообщение">Send Message</button>
+                <button style="margin-bottom: 20px;" class="form-button" type="submit" data-en="Send Message" data-uz="Xabar yuborish" data-ru="Отправить сообщение">Send Message</button>
             </form>
             <ul class="contact-link">
                 <li><a target="_blank" href="https://tashkent.hh.uz/profile/me?hhtmFrom=ProfileActivator"><img class="contact-link-img" src="./img/headhunter.png" alt=""></a></li>
@@ -148,6 +151,29 @@
             <p >© 2024 omankuloff</p>
         </div>
     </footer>
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel" data-en="Log In" data-uz="Tizimga kiring" data-ru="Войти">Log In</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <label for="Username">Username</label>
+         <input type="text" placeholder="Username">
+         <label for="Password">Password</label>
+         <input type="password" placeholder="Password">
+        </div>
+        <div class="modal-footer">
+            <a href="./signin.html" target="_blank" data-en="Sign Up" data-uz="Ro'yxatdan o'tish" data-ru="Зарегистрироваться">Sign Up</a>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-en="Close" data-uz="Yopish" data-ru="Закрыть">Close</button>
+          <button type="button" class="btn btn-primary" data-en="Log In" data-uz="Kirish" data-ru="Войти">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 <script src="./script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>

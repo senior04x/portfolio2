@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ro'yxatdan O'tish</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header style="background-color: #282c34; height: 80px">
+      <div id="language-switcher-container" class="language-switcher-container">
+        <div
+          id="language-switcher-button"
+          class="language-switcher-button big-p"
+        >
+          English
+        </div>
+        <ul id="language-options" class="language-options">
+          <li data-value="en"><p class="big-p">English</p></li>
+          <li data-value="uz"><p class="big-p">O'zbekcha</p></li>
+          <li data-value="ru"><p class="big-p">Русский</p></li>
+        </ul>
+      </div>
+    </header>
+    <section id="contact">
+      <div class="container">
+        <form action="#" method="post">
+          <label
+            for="name"
+            data-en="Phone Number"
+            data-uz="Telefon raqamingiz"
+            data-ru="Номер телефона"
+            >Phone Number</label
+          >
+          <input
+            placeholder="Phone Number"
+            type="tel"
+            id="name"
+            name="tel"
+            required
+          />
+          <label
+            for="email"
+            data-en="Password"
+            data-uz="Parol kiriting"
+            data-ru="Пароль"
+            >Password</label
+          >
+          <input
+            placeholder="Password"
+            type="password"
+            id="email"
+            name="email"
+            required
+          />
+          <label
+            for="email"
+            data-en="Verify"
+            data-uz="Tekshiring"
+            data-ru="Подтвердить"
+            >Verify</label
+          >
+          <input
+            placeholder="Verify"
+            type="password"
+            id="email"
+            name="email"
+            required
+          />
+          <button
+            style="margin-bottom: 20px"
+            class="form-button"
+            type="submit"
+            data-en="Sign Up"
+            data-uz="Ro'yxatdan o'tish"
+            data-ru="Отправить сообщение"
+          >
+            Sign Up
+          </button>
+        </form>
+        <ul class="contact-link">
+          <li>
+            <a
+              target="_blank"
+              href="https://tashkent.hh.uz/profile/me?hhtmFrom=ProfileActivator"
+              ><img class="contact-link-img" src="./img/headhunter.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://github.com/senior04x"
+              ><img class="contact-link-img" src="./img/github.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/xurshid-omonqulov-097a6a314/"
+              ><img class="contact-link-img" src="./img/linkedin.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://t.me/omankuloff"
+              ><img class="contact-link-img" src="./img/telegram.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.instagram.com/omankuloff/"
+              ><img class="contact-link-img" src="./img/instagram.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="tel:+998933786886"
+              ><img class="contact-link-img" src="./img/phone.png" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
