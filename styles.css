@@ -313,10 +313,12 @@ nav ul li a:hover {
     position: absolute;
     border-radius: 0 5px 0 0;
   }
-
+  .btn-primary2{
+    font-size: 10px;
+  }
   .nav-menu {
     position: absolute;
-    top: 350px;
+    top: 100%;
     display: flex;
     flex-direction: column;
     width: 50%;
