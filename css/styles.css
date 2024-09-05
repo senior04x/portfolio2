@@ -10,73 +10,12 @@ body {
   overflow-x: hidden;
 }
 
-header {
-  position: relative;
-  background: #282c34;
-  color: #fff;
-  text-align: center;
-}
-
-header .hero {
-  background: url("hero-background.jpg") no-repeat center center/cover;
-  padding: 100px 20px;
-  color: #fff;
-}
-
-header .hero-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-header .hero h1 {
-  font-size: 3em;
-  margin: 0;
-}
-
-header .hero p {
-  font-size: 1.5em;
-}
-
-header .cta-button {
-  display: inline-block;
-  padding: 10px 20px;
-  margin-top: 20px;
-  background-color: #333333;
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.2em;
-  border-radius: 5px;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  background: #333;
-  display: flex;
-  justify-content: center;
-}
-
-nav ul li {
-  margin: 0;
-}
-
-nav ul li a {
-  display: block;
-  padding: 15px 20px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav ul li a:hover {
-  background: #575757;
-}
-
 section {
   padding: 60px 20px;
 }
-
+h2{
+margin-bottom: 30px;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -120,7 +59,7 @@ section {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: #f5593de6;
   color: #fff;
   padding: 20px;
   transform: translateY(100%);
@@ -137,7 +76,7 @@ section {
 }
 
 .project-link {
-  color: #61dafb;
+  color: #0037ff;
   text-decoration: none;
 }
 
@@ -155,7 +94,7 @@ section {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.progress-bar {
+.progress-bar2 {
   background: #e0e0e0;
   border-radius: 5px;
   height: 10px;
@@ -164,8 +103,8 @@ section {
   width: 100%;
 }
 
-.progress {
-  background: #333333;
+.progress2 {
+  background: #f5593d;
   height: 100%;
   position: absolute;
   top: 0;
@@ -205,7 +144,7 @@ form textarea:focus {
 }
 .form-button {
   padding: 12px;
-  background: #333333;
+  background: #f5593d;
   border: none;
   color: #fff;
   font-size: 1.1em;
@@ -214,7 +153,7 @@ form textarea:focus {
 }
 
 .form-button:hover {
-  background: #545353;
+  background: #f33816;
 }
 input::placeholder,
 textarea::placeholder {
@@ -222,24 +161,26 @@ textarea::placeholder {
 }
 
 footer {
-  background: #282c34;
+  background-image: url("./img/pexels-pixabay-531880.jpg");
   color: #fff;
   text-align: center;
   padding: 20px;
   position: relative;
   bottom: 0;
   width: 100%;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+  justify-content: center;
+  z-index: 1;
+  backdrop-filter:blur(7px);
 }
 footer p{
   color: #fff;
   text-decoration: none;
   margin: 10px;
+  font-weight: 500;
 }
-footer a{
-  color: #fff;
-  text-decoration: none;
-}
-
 nav ul {
   list-style: none;
   padding: 0;
@@ -419,7 +360,7 @@ form textarea:focus {
   position: absolute;
   display: flex;
   top: 30px;
-  right: 40px;
+  left: 40px;
 }
 
 .language-switcher-button {
@@ -436,7 +377,7 @@ form textarea:focus {
   display: none;
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -444,7 +385,7 @@ form textarea:focus {
   border-radius: 5px;
   opacity: 0;
   pointer-events: none; /* Ko'rinmas holatda bosib bo'lmaydi */
-  transform: translateX(100%);
+  transform: translateX(-100%);
 }
 
 .language-options.show {
@@ -456,7 +397,7 @@ form textarea:focus {
 
 .language-options li {
   opacity: 0;
-  transform: translateX(20px);
+  transform: translateX(0);
   animation: fadeIn 0.4s forwards;
   font-size: 16px;
   color: #fff;
@@ -501,7 +442,7 @@ form textarea:focus {
 
 @keyframes slideIn {
   from {
-    transform: translateX(100%);
+    transform: translateX(-100%);
     opacity: 0;
   }
   to {
@@ -513,7 +454,7 @@ form textarea:focus {
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateX(20px);
+    transform: translateX(-20px);
   }
   to {
     opacity: 1;
@@ -524,10 +465,13 @@ form textarea:focus {
 @media (max-width: 768px) {
   .language-switcher-container {
     top: 22px;
-    right: 18px;
+    left: 18px;
   }
   .language-switcher-button,
   .language-options li {
+    font-size: 10px;
+  }
+  .big-p{
     font-size: 10px;
   }
   .language-options.show {
@@ -621,3 +565,5 @@ display: none;
   margin-bottom: 1px;
   border-bottom: 1px solid #333;
 }
+
+

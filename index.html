@@ -1,179 +1,469 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Omonqulov Xurshid</title>
-    <link rel="icon" href="./img/portfolio.png" type="image/png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="./img/portfolio.png" type="image/png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+
     <script src="script.js" defer></script>
-</head>
-<body>
-    <header>
-        <div class="hero">
-            <button type="button" class="btn btn-primary2" data-bs-toggle="modal" data-bs-target="#staticBackdrop"  data-en="Login" data-uz="Kirish" data-ru="Войти">Login</button>
-            <div class="hero-content">
-                <h1 class="title" data-en="Omonqulov Xurshid" data-uz="Omonqulov Xurshid" data-ru="Омонкулов Хуршид">Omonqulov Xurshid</h1>
-                <p class="text" data-en="Front-End Developer | Crafting Beautiful and Functional Digital Experiences" data-uz="Front-End Developer | Chiroyli va funksional raqamli tajribalar yarataman" data-ru="Front-End Разработчик | Создание красивых и функциональных цифровых решений">Front-End Developer | Crafting Beautiful and Functional Digital Experiences</p>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-toggleable-md fixed-top navbar-transparent"
+      color-on-scroll="650"
+      style="position: absolute"
+    >
+      <div class="container">
+        <div class="navbar-translate">
+          <button
+            class="navbar-toggler navbar-toggler-right navbar-burger"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarToggler"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-bar"></span>
+            <span class="navbar-toggler-bar"></span>
+            <span class="navbar-toggler-bar"></span>
+          </button>
+          <div
+            id="language-switcher-container"
+            class="language-switcher-container"
+          >
+            <div
+              id="language-switcher-button"
+              class="language-switcher-button big-p"
+            >
+              English
             </div>
-        </div>
-        <div id="language-switcher-container" class="language-switcher-container">
-          <div id="language-switcher-button" class="language-switcher-button big-p">English</div>
-          <ul id="language-options" class="language-options">
+            <ul id="language-options" class="language-options">
               <li data-value="en"><p class="big-p">English</p></li>
               <li data-value="uz"><p class="big-p">O'zbekcha</p></li>
               <li data-value="ru"><p class="big-p">Русский</p></li>
-          </ul>
-      </div>
-        <nav>
-            <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
-            <ul class="nav-menu">
-                <li><a class="nav-menu-link" href="./index.html" data-en="Home" data-uz="Bosh sahifa" data-ru="Главная">Home</a></li>
-                <li><a class="nav-menu-link" href="#about" data-en="About" data-uz="Haqimda" data-ru="Обо мне">About</a></li>
-                <li><a class="nav-menu-link" href="#projects" data-en="Projects" data-uz="Loyihalar" data-ru="Проекты">Projects</a></li>
-                <li><a class="nav-menu-link" href="#skills" data-en="Skills" data-uz="Ko'nikmalar" data-ru="Навыки">Skills</a></li>
-                <li><a class="nav-menu-link" href="#contact" data-en="Contact" data-uz="Aloqa" data-ru="Контакт">Contact</a></li>
-              
             </ul>
-          
-        </nav>
-       
-    </header>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav ml-auto" style="background-color: transparent">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                rel="tooltip"
+                title="Like us on Facebook"
+                data-placement="bottom"
+                href="#about"
+              >
+                about
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                rel="tooltip"
+                title="Like us on Facebook"
+                data-placement="bottom"
+                href="#projects"
+              >
+                project
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                rel="tooltip"
+                title="Like us on Facebook"
+                data-placement="bottom"
+                href="#skills"
+              >
+                skill
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                rel="tooltip"
+                title="Like us on Facebook"
+                data-placement="bottom"
+                href="#contact"
+              >
+                contact
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="./signin.html"
+                target="_blank"
+                class="btn btn-danger btn-round"
+                >Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="wrapper">
+      <div
+        class="page-header section-dark"
+        style="background-image: url('./img/pexels-pixabay-531880.jpg')"
+      >
+        <div class="filter"></div>
+        <div class="content-center">
+          <div class="container">
+            <div class="title-brand">
+              <h1
+                class="presentation-title"
+                data-en="Omonqulov Xurshid"
+                data-uz="Omonqulov Xurshid"
+                data-ru="Омонкулов Хуршид"
+              >
+                Omonqulov Xurshid
+              </h1>
+            </div>
+
+            <h2
+              class="presentation-subtitle text-center"
+              data-en="Front-End Developer | Crafting Beautiful and Functional Digital Experiences"
+              data-uz="Front-End Developer | Chiroyli va funksional raqamli tajribalar yarataman"
+              data-ru="Front-End Разработчик | Создание красивых и функциональных цифровых решений"
+            >
+              Front-End Developer | Crafting Beautiful and Functional Digital
+              Experiences
+            </h2>
+          </div>
+        </div>
+        <div
+          class="moving-clouds"
+          style="
+            background-image: url('http://demos.creative-tim.com/paper-kit-2/assets/img/clouds.png');
+          "
+        ></div>
+      </div>
+    </div>
 
     <section id="about">
-        <div class="container">
-            <h2 data-en="About Me" data-uz="Men haqimda" data-ru="Обо мне">About Me</h2>
-            <div class="about-content">
-                <a class="insta-link" href="https://www.instagram.com/omankuloff/">
-                    <img src="./img/my.jpg" alt="Profile Picture" class="profile-pic" />
-                    <p class="insta-text"></p>
-                </a>
-                <p data-en="I am a highly passionate and dedicated Front-End Developer with a strong focus on creating responsive, interactive, and user-friendly web applications. My expertise lies in modern web technologies, where I strive to merge functionality with aesthetics, ensuring that every project I work on is not only efficient but also visually stunning. I place a high value on design, as I believe that the user experience should be as beautiful as it is seamless, reflecting the quality and innovation behind the code." data-uz="Men sezgir, interaktiv va foydalanuvchilarga qulay veb-ilovalarni yaratishga e'tibor qaratgan ishtiyoqli va fidoyi Front-End dasturchiman. Men zamonaviy veb-texnologiyalarga ixtisoslashganman va funksionallikni estetik bilan uyg‘unlashtirishga intilaman, shunda men ishlayotgan har bir loyiha nafaqat samarali, balki vizual jihatdan ham ajoyib bo‘lishi uchun. Men dizaynga katta ahamiyat beraman, chunki foydalanuvchi tajribasi naqadar silliq bo‘lsa, shunchalik go‘zal bo‘lishi kerak, bu esa koddagi sifat va innovatsiyalarni aks ettiradi." data-ru="Я являюсь увлеченным и целеустремленным Front-End разработчиком, сосредоточенным на создании адаптивных, интерактивных и удобных для пользователя веб-приложений. Моя специализация – современные веб-технологии, где я стремлюсь объединить функциональность с эстетикой, чтобы каждый проект, над которым я работаю, был не только эффективным, но и визуально впечатляющим. Я придаю большое значение дизайну, поскольку считаю, что пользовательский опыт должен быть не только безупречным, но и эстетически привлекательным, отражая качество и инновации, заложенные в коде.">
-                Hello! I'm a passionate Front-End Developer with a knack for creating responsive and interactive web applications. I specialize in modern web technologies and have a keen eye for design, ensuring that my projects are not only functional but also visually appealing.
-                </p>
-            </div>
+      <div class="container">
+        <h2 data-en="About Me" data-uz="Men haqimda" data-ru="Обо мне">
+          About Me
+        </h2>
+        <div class="about-content">
+          <a class="insta-link" href="https://www.instagram.com/omankuloff/">
+            <img src="./img/my.jpg" alt="Profile Picture" class="profile-pic" />
+            <p class="insta-text"></p>
+          </a>
+          <p
+            data-en="I am a highly passionate and dedicated Front-End Developer with a strong focus on creating responsive, interactive, and user-friendly web applications. My expertise lies in modern web technologies, where I strive to merge functionality with aesthetics, ensuring that every project I work on is not only efficient but also visually stunning. I place a high value on design, as I believe that the user experience should be as beautiful as it is seamless, reflecting the quality and innovation behind the code."
+            data-uz="Men sezgir, interaktiv va foydalanuvchilarga qulay veb-ilovalarni yaratishga e'tibor qaratgan ishtiyoqli va fidoyi Front-End dasturchiman. Men zamonaviy veb-texnologiyalarga ixtisoslashganman va funksionallikni estetik bilan uyg‘unlashtirishga intilaman, shunda men ishlayotgan har bir loyiha nafaqat samarali, balki vizual jihatdan ham ajoyib bo‘lishi uchun. Men dizaynga katta ahamiyat beraman, chunki foydalanuvchi tajribasi naqadar silliq bo‘lsa, shunchalik go‘zal bo‘lishi kerak, bu esa koddagi sifat va innovatsiyalarni aks ettiradi."
+            data-ru="Я являюсь увлеченным и целеустремленным Front-End разработчиком, сосредоточенным на создании адаптивных, интерактивных и удобных для пользователя веб-приложений. Моя специализация – современные веб-технологии, где я стремлюсь объединить функциональность с эстетикой, чтобы каждый проект, над которым я работаю, был не только эффективным, но и визуально впечатляющим. Я придаю большое значение дизайну, поскольку считаю, что пользовательский опыт должен быть не только безупречным, но и эстетически привлекательным, отражая качество и инновации, заложенные в коде."
+          >
+            Hello! I'm a passionate Front-End Developer with a knack for
+            creating responsive and interactive web applications. I specialize
+            in modern web technologies and have a keen eye for design, ensuring
+            that my projects are not only functional but also visually
+            appealing.
+          </p>
         </div>
+      </div>
     </section>
 
     <section id="projects">
-        <div class="container">
-            <h2 data-en="Projects" data-uz="Loyihalar" data-ru="Проекты">Projects</h2>
-            <div class="project-gallery">
-                <div class="project-item">
-                    <img src="./img/project1.png" alt="Project 1" />
-                    <div class="project-overlay">
-                        <h3 data-en="Door handle" data-uz="Eskiya tutqichi" data-ru="Ручка двери">Door handle</h3>
-                        <p data-en="A brief description of the project. Technologies used: HTML/CSS, JavaScript." data-uz="Loyiha haqida qisqacha tavsif. Ishlatilgan texnologiyalar: HTML/CSS, JavaScript." data-ru="Краткое описание проекта. Использованные технологии: HTML/CSS, JavaScript.">
-                        A brief description of the project. Technologies used: HTML/CSS, JavaScript.
-                        </p>
-                        <a href="https://lambent-chimera-7a6337.netlify.app/" target="_blank" class="project-link" data-en="See More" data-uz="Ko'proq ko'rish" data-ru="Посмотреть">See More</a>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <img src="./img/project2.png" alt="Project 2" />
-                    <div class="project-overlay">
-                        <h3 data-en="Uzum Market Copy" data-uz="Uzum Market nusxasi" data-ru="Копия Uzum Market">Uzum Market Copy</h3>
-                        <p data-en="A brief description of the project. Technologies used: HTML/CSS, JavaScript." data-uz="Loyiha haqida qisqacha tavsif. Ishlatilgan texnologiyalar: HTML/CSS, JavaScript." data-ru="Краткое описание проекта. Использованные технологии: HTML/CSS, JavaScript.">
-                        A brief description of the project. Technologies used: HTML/CSS, JavaScript.
-                        </p>
-                        <a href="https://uzum-copybyxurshid.netlify.app/" target="_blank" class="project-link" data-en="See More" data-uz="Ko'proq ko'rish" data-ru="Посмотреть">See More</a>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 data-en="Projects" data-uz="Loyihalar" data-ru="Проекты">
+          Projects
+        </h2>
+        <div class="project-gallery">
+          <div class="project-item">
+            <img src="./img/project1.png" alt="Project 1" />
+            <div class="project-overlay">
+              <h3
+                data-en="Door handle"
+                data-uz="Eskiya tutqichi"
+                data-ru="Ручка двери"
+              >
+                Door handle
+              </h3>
+              <p
+                data-en="A brief description of the project. Technologies used: HTML/CSS, JavaScript."
+                data-uz="Loyiha haqida qisqacha tavsif. Ishlatilgan texnologiyalar: HTML/CSS, JavaScript."
+                data-ru="Краткое описание проекта. Использованные технологии: HTML/CSS, JavaScript."
+              >
+                A brief description of the project. Technologies used: HTML/CSS,
+                JavaScript.
+              </p>
+              <a
+                href="https://lambent-chimera-7a6337.netlify.app/"
+                target="_blank"
+                class="project-link"
+                data-en="See More"
+                data-uz="Ko'proq ko'rish"
+                data-ru="Посмотреть"
+                >See More</a
+              >
             </div>
+          </div>
+          <div class="project-item">
+            <img src="./img/project2.png" alt="Project 2" />
+            <div class="project-overlay">
+              <h3
+                data-en="Uzum Market Copy"
+                data-uz="Uzum Market nusxasi"
+                data-ru="Копия Uzum Market"
+              >
+                Uzum Market Copy
+              </h3>
+              <p
+                data-en="A brief description of the project. Technologies used: HTML/CSS, JavaScript."
+                data-uz="Loyiha haqida qisqacha tavsif. Ishlatilgan texnologiyalar: HTML/CSS, JavaScript."
+                data-ru="Краткое описание проекта. Использованные технологии: HTML/CSS, JavaScript."
+              >
+                A brief description of the project. Technologies used: HTML/CSS,
+                JavaScript.
+              </p>
+              <a
+                href="https://uzum-copybyxurshid.netlify.app/"
+                target="_blank"
+                class="project-link"
+                data-en="See More"
+                data-uz="Ko'proq ko'rish"
+                data-ru="Посмотреть"
+                >See More</a
+              >
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="skills">
-        <div class="container">
-            <h2 data-en="Skills" data-uz="Ko'nikmalar" data-ru="Навыки">Skills</h2>
-            <div class="skills-list">
-                <div class="skill">
-                    <h3 data-en="HTML/CSS" data-uz="HTML/CSS" data-ru="HTML/CSS">HTML/CSS</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 96%"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <h3 data-en="JavaScript" data-uz="JavaScript" data-ru="JavaScript">JavaScript</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 93%"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <h3 data-en="React" data-uz="React" data-ru="React">React</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 25%"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <h3 data-en="Git" data-uz="Git" data-ru="Git">Git</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 85%"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <h3 data-en="Bootstrap" data-uz="Bootstrap" data-ru="Bootstrap">Bootstrap</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 80%"></div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 data-en="Skills" data-uz="Ko'nikmalar" data-ru="Навыки">Skills</h2>
+        <div class="skills-list">
+          <div class="skill">
+            <h3 data-en="HTML/CSS" data-uz="HTML/CSS" data-ru="HTML/CSS">
+              HTML/CSS
+            </h3>
+            <div class="progress-bar2">
+              <div class="progress2" style="width: 96%"></div>
             </div>
+          </div>
+          <div class="skill">
+            <h3 data-en="JavaScript" data-uz="JavaScript" data-ru="JavaScript">
+              JavaScript
+            </h3>
+            <div class="progress-bar2">
+              <div class="progress2" style="width: 93%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <h3 data-en="React" data-uz="React" data-ru="React">React</h3>
+            <div class="progress-bar2">
+              <div class="progress2" style="width: 25%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <h3 data-en="Git" data-uz="Git" data-ru="Git">Git</h3>
+            <div class="progress-bar2">
+              <div class="progress2" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <h3 data-en="Bootstrap" data-uz="Bootstrap" data-ru="Bootstrap">
+              Bootstrap
+            </h3>
+            <div class="progress-bar2">
+              <div class="progress2" style="width: 80%"></div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="contact">
-        <div class="container">
-            <h2 data-en="Contact Me" data-uz="Men bilan bog'laning" data-ru="Свяжитесь со мной">Contact Me</h2>
-            <form action="https://formspree.io/f/xwpeyjzd" method="post">
-                <label for="name" data-en="Name:" data-uz="Ism:" data-ru="Имя:">Name:</label>
-                <input placeholder="Name" type="text" id="name" name="name" required />
-                <label for="email" data-en="Email:" data-uz="Email:" data-ru="Email:">Email:</label>
-                <input placeholder="Email" type="email" id="email" name="email" required />
-                <label for="message" data-en="Message:" data-uz="Xabar:" data-ru="Сообщение:">Message:</label>
-                <textarea placeholder="Your message" id="message" name="message" rows="4" required></textarea>
-                <button style="margin-bottom: 20px;" class="form-button" type="submit" data-en="Send Message" data-uz="Xabar yuborish" data-ru="Отправить сообщение">Send Message</button>
-            </form>
-            <ul class="contact-link">
-                <li><a target="_blank" href="https://tashkent.hh.uz/profile/me?hhtmFrom=ProfileActivator"><img class="contact-link-img" src="./img/headhunter.png" alt=""></a></li>
-                <li><a target="_blank" href="https://github.com/senior04x"><img class="contact-link-img" src="./img/github.png" alt=""></a></li>
-                <li><a target="_blank" href="https://www.linkedin.com/in/xurshid-omonqulov-097a6a314/"><img class="contact-link-img" src="./img/linkedin.png" alt=""></a></li>
-                <li><a target="_blank" href="https://t.me/omankuloff"><img class="contact-link-img" src="./img/telegram.png" alt=""></a></li>
-                <li><a target="_blank" href="https://www.instagram.com/omankuloff/"><img class="contact-link-img" src="./img/instagram.png" alt=""></a></li>
-                <li><a href="tel:+998933786886"><img class="contact-link-img" src="./img/phone.png" alt=""></a></li>
-            </ul>
-        </div>
-       
+      <div class="container">
+        <h2
+          data-en="Contact Me"
+          data-uz="Men bilan bog'laning"
+          data-ru="Свяжитесь со мной"
+        >
+          Contact Me
+        </h2>
+        <form action="https://formspree.io/f/xwpeyjzd" method="post">
+          <label for="name" data-en="Name:" data-uz="Ism:" data-ru="Имя:"
+            >Name:</label
+          >
+          <input
+            placeholder="Name"
+            type="text"
+            id="name"
+            name="name"
+            required
+          />
+          <label for="email" data-en="Email:" data-uz="Email:" data-ru="Email:"
+            >Email:</label
+          >
+          <input
+            placeholder="Email"
+            type="email"
+            id="email"
+            name="email"
+            required
+          />
+          <label
+            for="message"
+            data-en="Message:"
+            data-uz="Xabar:"
+            data-ru="Сообщение:"
+            >Message:</label
+          >
+          <textarea
+            placeholder="Your message"
+            id="message"
+            name="message"
+            rows="4"
+            required
+          ></textarea>
+          <button
+            style="margin-bottom: 20px"
+            class="form-button"
+            type="submit"
+            data-en="Send Message"
+            data-uz="Xabar yuborish"
+            data-ru="Отправить сообщение"
+          >
+            Send Message
+          </button>
+        </form>
+        <ul class="contact-link">
+          <li>
+            <a
+              target="_blank"
+              href="https://tashkent.hh.uz/profile/me?hhtmFrom=ProfileActivator"
+              ><img class="contact-link-img" src="./img/headhunter.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://github.com/senior04x"
+              ><img class="contact-link-img" src="./img/github.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/xurshid-omonqulov-097a6a314/"
+              ><img class="contact-link-img" src="./img/linkedin.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://t.me/omankuloff"
+              ><img class="contact-link-img" src="./img/telegram.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.instagram.com/omankuloff/"
+              ><img class="contact-link-img" src="./img/instagram.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="tel:+998933786886"
+              ><img class="contact-link-img" src="./img/phone.png" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <footer>
-        <div class="container">
-            <p >© 2024 omankuloff</p>
-        </div>
+      <div class="container">
+        <p>© 2024 omankuloff</p>
+      </div>
     </footer>
-  <!-- Modal -->
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel" data-en="Log In" data-uz="Tizimga kiring" data-ru="Войти">Log In</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1
+              class="modal-title fs-5"
+              id="staticBackdropLabel"
+              data-en="Log In"
+              data-uz="Tizimga kiring"
+              data-ru="Войти"
+            >
+              Log In
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
             <label for="Username">Username</label>
-         <input type="text" placeholder="Username">
-         <label for="Password">Password</label>
-         <input type="password" placeholder="Password">
-        </div>
-        <div class="modal-footer">
-            <a href="./signin.html" target="_blank" data-en="Sign Up" data-uz="Ro'yxatdan o'tish" data-ru="Зарегистрироваться">Sign Up</a>
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-en="Close" data-uz="Yopish" data-ru="Закрыть">Close</button>
-          <button type="button" class="btn btn-primary" data-en="Log In" data-uz="Kirish" data-ru="Войти">Send</button>
+            <input type="text" placeholder="Username" />
+            <label for="Password">Password</label>
+            <input type="password" placeholder="Password" />
+          </div>
+          <div class="modal-footer">
+            <a
+              href="./signin.html"
+              target="_blank"
+              data-en="Sign Up"
+              data-uz="Ro'yxatdan o'tish"
+              data-ru="Зарегистрироваться"
+              >Sign Up</a
+            >
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+              data-en="Close"
+              data-uz="Yopish"
+              data-ru="Закрыть"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-en="Log In"
+              data-uz="Kirish"
+              data-ru="Войти"
+            >
+              Send
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</body>
-<script src="./script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/main.js"></script>
 </html>

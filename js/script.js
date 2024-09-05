@@ -10,40 +10,8 @@
     
 //     event.target.reset();
 // });
-
-document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navMenu = document.querySelector('.nav-menu');
-
-    menuToggle.addEventListener('click', function(event) {
-        event.stopPropagation(); 
-        navMenu.classList.toggle('active');
-        
-        if (navMenu.classList.contains('active')) {
-            menuToggle.innerHTML = '&#10005;';
-        } else {
-            menuToggle.innerHTML = '&#9776;'; 
-        }
-    });
-
-    document.addEventListener('click', function() {
-        if (navMenu.classList.contains('active')) {
-            navMenu.classList.remove('active');
-            menuToggle.innerHTML = '&#9776;'; 
-        }
-    });
-
-    navMenu.addEventListener('click', function(event) {
-        event.stopPropagation();
-    });
-});
-
-
-
-
-
-const aboutContent = document.querySelector('.title');
-const projectContent = document.querySelector('.text');
+const aboutContent = document.querySelector('.presentation-title');
+const projectContent = document.querySelector('.text-center');
 
 function handleScroll() {
     const contentPosition = aboutContent.getBoundingClientRect().top;
