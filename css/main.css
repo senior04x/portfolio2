@@ -2615,7 +2615,7 @@ textarea.form-control {
 .navbar .navbar-brand {
   font-weight: 600;
   margin: 5px 0px;
-  padding: 20px 15px;
+  padding: 0;
   font-size: 14px;
   color: #66615b;
   text-transform: uppercase;

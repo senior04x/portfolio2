@@ -2423,8 +2423,8 @@ textarea.form-control {
 }
 .navbar .navbar-brand {
   font-weight: 600;
-  margin: 5px 0px;
-  padding: 20px 15px;
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   color: #66615b;
   text-transform: uppercase;
@@ -2671,8 +2671,8 @@ textarea.form-control {
 
 /*      Navbar with icons            */
 .navbar-icons.navbar .navbar-brand {
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .navbar-icons .navbar-nav .nav-item .nav-link {
   text-align: center;
